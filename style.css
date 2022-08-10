@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+*{
+	font-family: 'Kalam', cursive;
+	padding: 0; margin: 0;
+	box-sizing: content-box;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+html{
+	overflow-x: hidden;
+	font-size: 80%;
+}
+
+
+
+header{
+	width: 100%;
+	background:#fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 1.5rem; left:50%;
+	transform: translateX(-50%);
+	border-radius: .50rem;
+	box-shadow: 0 .30rem .15rem rgb(196, 23, 23);
+	padding:0;
+	margin:0;
+	transition: .5s linear;
+	z-index: 5000;
+	
+}
+
+.header-active{
+    
+	top: 10px;
+	width:300%;
+	border-radius:50;
+}
+
+
+header.logo{
+	color:rgb(221, 26, 26);
+	font-size: 50rem;
+}
+header .logo span{
+	color:#0098a1;
+}
+header .navbar ul{
+	
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0; padding: 0;
+	
+	
+	 
+}
+ 
+header.navbar ul li{
+	
+	font-size: 35rem;
+	margin: 0 1rem;
+
+}
+ 
+header.navbar ul li a{
+	
+	font-size: 12rem;
+	color: rgb(233, 19, 19);
+	transition: .23s linear;
+	
+}
+ 
+
+ 
+header .fa-bars{
+	font-size: 100rem;
+	color: #7ea100;
+	cursor: pointer;
+	display: none;
+}
