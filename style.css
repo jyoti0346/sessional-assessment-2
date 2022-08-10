@@ -21,7 +21,7 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	position: fixed;
+	/* position: fixed; */
 	top: 1.5rem; left:50%;
 	transform: translateX(-50%);
 	border-radius: .50rem;
@@ -83,6 +83,91 @@ header .fa-bars{
 	cursor: pointer;
 	display: none;
 }
+
+
+	
+
+.home form-container form{
+	margin-top: 28rem;
+	padding:2rem;
+	width:40rem;
+	background-color: rgb(209, 1, 1);
+	box-shadow:0 .3rem .5rem rgba(219, 187, 5, 0.884);
+	border-radius: .5rem;
+	box-sizing: content-box;
+}
+.home form-container form h3{
+	color:rgb(41, 33, 33);
+	font-size:1007rem;
+	text-align: center;
+}
+.home form-container form span{
+	color: #0a0a0a ;
+	font-size: 4.5vw;
+	margin: 2.5rem 0;
+	display: block;
+	text-align: center;
+	
+	
+}
+.home form-container form input{
+	width:100%;
+	padding:0 1rem;
+	height:4rem;
+	font-size:3vw;
+	background:rgba(22, 22, 21, 0.897);
+	border:none;
+	outline:none;
+	color:rgb(15, 15, 15);
+	box-shadow: 0 .1rem .3rem rgba(5, 5, 5, 0.952)inset;
+	border-radius: .5rem;
+}
+.home form-container form input[type="submit"]{
+	width:100rem;
+	color:rgb(90, 233, 34);
+	background:#0098a1;
+	cursor:pointer;
+	font-size:2rem;
+	margin-top:2rem;
+	transition:.2s linear;
+}
+.home form-container form input[type="submit"]:hover{
+	border:.2rem solid #080808;
+	color: #0e0e0d;
+	background: none;
+}
+
+	
+
+	
+
+
+
+@media (max-width:991px){
+	.home{
+		flex-flow: column;
+		padding:1.5rem;
+	}
+	.home .content{
+		text-align:center;
+	}
+	.home .content h1{
+		font-size:5.5rem;
+	}
+	.home .content p{
+		font-size:1.8rem;
+		padding:0;
+		border:none;
+	}
+	
+	
+
+}
+
+
+
+
+
 
 
 
