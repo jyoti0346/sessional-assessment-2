@@ -21,7 +21,7 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	/* position: fixed; */
+	position: fixed;
 	top: 1.5rem; left:50%;
 	transform: translateX(-50%);
 	border-radius: .50rem;
@@ -43,7 +43,7 @@ header{
 
 header.logo{
 	color:rgb(221, 26, 26);
-	font-size: 50rem;
+	font-size: 90rem;
 }
 header .logo span{
 	color:#0098a1;
@@ -62,14 +62,14 @@ header .navbar ul{
  
 header.navbar ul li{
 	
-	font-size: 35rem;
+	font-size: 55rem;
 	margin: 0 1rem;
 
 }
  
 header.navbar ul li a{
 	
-	font-size: 12rem;
+	font-size: 39rem;
 	color: rgb(233, 19, 19);
 	transition: .23s linear;
 	
@@ -83,63 +83,40 @@ header .fa-bars{
 	cursor: pointer;
 	display: none;
 }
+.flex-form > * {
+	border: 0;
+	padding: 10px;
+	background: white;
+	line-height: 50px;
+	font-size: 20px;
+	border-radius: 0;
+	outline: 1;
+	border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+.flex-form > *:last-child {
+	border-right: 0;
+}
+
+
+.cover {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100%;
+	min-height: 100vh;
+}
+
+.flex-form {
+	display: flex;
+	border: 20px solid rgba(0,0,0,0.3);
+	border-radius: 5px;
+}
 
 
 	
 
-.home form-container form{
-	margin-top: 28rem;
-	padding:2rem;
-	width:40rem;
-	background-color: rgb(209, 1, 1);
-	box-shadow:0 .3rem .5rem rgba(219, 187, 5, 0.884);
-	border-radius: .5rem;
-	box-sizing: content-box;
-}
-.home form-container form h3{
-	color:rgb(41, 33, 33);
-	font-size:1007rem;
-	text-align: center;
-}
-.home form-container form span{
-	color: #0a0a0a ;
-	font-size: 4.5vw;
-	margin: 2.5rem 0;
-	display: block;
-	text-align: center;
-	
-	
-}
-.home form-container form input{
-	width:100%;
-	padding:0 1rem;
-	height:4rem;
-	font-size:3vw;
-	background:rgba(22, 22, 21, 0.897);
-	border:none;
-	outline:none;
-	color:rgb(15, 15, 15);
-	box-shadow: 0 .1rem .3rem rgba(5, 5, 5, 0.952)inset;
-	border-radius: .5rem;
-}
-.home form-container form input[type="submit"]{
-	width:100rem;
-	color:rgb(90, 233, 34);
-	background:#0098a1;
-	cursor:pointer;
-	font-size:2rem;
-	margin-top:2rem;
-	transition:.2s linear;
-}
-.home form-container form input[type="submit"]:hover{
-	border:.2rem solid #080808;
-	color: #0e0e0d;
-	background: none;
-}
-
-	
-
-	
 
 
 
@@ -163,6 +140,74 @@ header .fa-bars{
 	
 
 }
+.bbd {
+    background-color: #333;
+	background-repeat: no-repeat;
+	 background-size: 100% 100%;
+  }
+  
+  .gallery{
+	min-height: 100vh; 
+  }
+  .heading{
+	text-align: center;
+  }
+  .heading span{
+	color: #f9004d;
+  }
+  
+  .gallery .booox-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 90%;
+	margin:0 auto;
+  }
+  
+  .gallery .booox-container .booox{
+	height:20rem;
+	width:30rem;
+	margin:2rem;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .gallery .booox-container .booox img{
+	height:100%;
+	width:100%;
+	object-fit: cover;
+  }
+  
+  .gallery .booox-container .booox .icons{
+	position: absolute;
+	top:120%; left: 0;
+	background:linear-gradient(transparent, #333);
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	height:100%;
+	width: 100%;
+	opacity: 0;
+	transition: .2s linear;
+  }
+  
+  .gallery .booox-container .booox:hover .icons{
+	opacity: 1;
+	top:0;
+  }
+  
+  .gallery .booox-container .booox .icons a{
+	color:#fff;
+	text-shadow: 0 .1rem .3rem #000;
+	font-size: 3rem;
+	padding-bottom: 2rem;
+  }
+  .gallery .booox-container .booox .icons a:hover{
+	color:#0098a1;
+  }
+  
 
 
 

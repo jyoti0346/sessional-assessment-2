@@ -1,0 +1,61 @@
+.bbd {
+ 
+    background-repeat: no-repeat;
+     background-size: 100% 100%;
+  }
+  
+  .gallery{
+    min-height: 100vh; 
+  }
+  
+  .gallery .booox-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin:0 auto;
+  }
+  
+  .gallery .booox-container .booox{
+    height:20rem;
+    width:30rem;
+    margin:2rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .gallery .booox-container .booox img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+  }
+  
+  .gallery .booox-container .booox .icons{
+    position: absolute;
+    top:120%; left: 0;
+    background:linear-gradient(transparent, #333);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height:100%;
+    width: 100%;
+    opacity: 0;
+    transition: .2s linear;
+  }
+  
+  .gallery .booox-container .booox:hover .icons{
+    opacity: 1;
+    top:0;
+  }
+  
+  .gallery .booox-container .booox .icons a{
+    color:#fff;
+    text-shadow: 0 .1rem .3rem #000;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+  .gallery .booox-container .booox .icons a:hover{
+    color:#0098a1;
+  }
