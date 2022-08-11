@@ -54,10 +54,8 @@ header .navbar ul{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin: 0; padding: 0;
-	
-	
-	 
+	margin: 0; 
+	padding: 0;	 
 }
  
 header.navbar ul li{
@@ -101,24 +99,43 @@ header .fa-bars{
 
 .cover {
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	margin:12%;
 	flex-direction: column;
-	min-height: 100%;
-	min-height: 100vh;
+	min-height: 90%;
+	
 }
 
 .flex-form {
 	display: flex;
 	border: 20px solid rgba(0,0,0,0.3);
 	border-radius: 5px;
+	margin-bottom: 2%;
+}
+#change_btn{
+	width: 20%;
+    text-align: center;
+    margin-left: 40%;
+	margin-bottom:3%;
+    padding: 2%;
+    border-radius: 7px;
+    font-size: larger;
+	cursor: pointer;
 }
 
-
+#jj{
+	height:250px;
+	width:300px;
+	margin:1%;
+	display: flex;
+	margin-left:0%;
+}
+#jj > img{
+	width:83%;
+	height:83%;
+	margin:2%;
+	border-radius:6px;
+}
 	
-
-
-
 
 @media (max-width:991px){
 	.home{
